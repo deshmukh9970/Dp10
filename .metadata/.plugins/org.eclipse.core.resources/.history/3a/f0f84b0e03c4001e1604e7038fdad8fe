@@ -1,0 +1,12 @@
+package com.array.lab2;
+
+//Find the pair of elements whose sum is equivalent to the given sum
+
+public class FindPair {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

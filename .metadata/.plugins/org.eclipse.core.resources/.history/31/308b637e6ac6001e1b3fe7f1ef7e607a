@@ -1,0 +1,30 @@
+package com.array.project;
+
+import java.util.Scanner;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Size : ");
+		int size=sc.nextInt();
+	   Student s[]=new Student[size];
+	   
+	   do {
+		    System.out.println("1.Add Student");
+		    System.out.println("2.Update Student");
+		    System.out.println("3.Delete Student");
+		    System.out.println("4.Search Student");
+		    System.out.println("5.Show Student");
+		    System.out.println("5.Exits");
+		    
+		    System.out.println("Enter Choice : ");
+		    
+		   
+	   }while(true);
+
+	}
+
+}

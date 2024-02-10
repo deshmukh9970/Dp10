@@ -1,0 +1,79 @@
+package com.array.project;
+
+import java.util.Scanner;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		Student s[]=new Student[4];
+	  
+	   
+	   do {
+		    System.out.println("1.Add Student");
+		    System.out.println("2.Update Student");
+		    System.out.println("3.Delete Student");
+		    System.out.println("4.Search Student");
+		    System.out.println("5.Show Student");
+		    System.out.println("5.Exits");
+		    
+		    System.out.println("Enter Choice : ");
+		    int choice=sc.nextInt();
+		    int id,price;
+		    String name;
+		    String course;
+		    int count=0;
+		    switch(choice)
+		    {
+		    case 1:
+		    	
+		    	 System.out.println("Add Student");
+				   System.out.println("Enter number of Student");
+				   int size=sc.nextInt();
+				   
+				   
+				   for(int i=0;i<size;i++)
+				   {
+					   System.out.println("Enter Student id");
+					    id=sc.nextInt();
+					   System.out.println("Enter Student name");
+					   name=sc.next();
+					   System.out.println("Enter Student courseName");
+					   course=sc.next();
+					   System.out.println("Enter Student price");
+					   price=sc.nextInt();
+					   s[count]=new Student(id,name,course,price);
+					   count++;   
+				   }
+				   
+		    case 2:
+		    	 
+		    	 System.out.println("Update Student");
+				   System.out.println("Enter Student id you want to update");
+				   id=sc.nextInt();
+				   for(int i=0;i<count;i++)
+				   {
+					   if()
+					   {
+						  System.out.println("Enter price you want to update");
+						  price=sc.nextInt();
+						
+						  
+						  
+					   }
+				   }
+				   System.out.println("succesfully Updated");
+				   break;
+		    
+		        
+		      
+		    }
+		    
+		   
+	   }while(true);
+
+	}
+
+}

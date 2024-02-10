@@ -1,0 +1,20 @@
+package com.array.objects2;
+
+public class StudentConstructor2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Course ct[]=new Course[3];
+		
+		ct[0]=new Course(1,"java");
+		ct[1]=new Course(2,"dotNet");
+		ct[2]=new Course(3,"sql");
+		
+		Student stu[]=new Student[3];
+		
+		
+
+	}
+
+}

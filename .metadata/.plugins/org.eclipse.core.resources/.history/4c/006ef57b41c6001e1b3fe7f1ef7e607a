@@ -1,0 +1,28 @@
+package com.string;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         
+		String s="java";
+		System.out.println(s.hashCode());
+		
+		String s1="java";
+		
+		System.out.println(s.hashCode());
+		
+		String s3=new String("java");
+		System.out.println(s3.hashCode()); //when we debag but here crate two object 1 object in heap and 2 scp 
+		// if scp java is not presnt that time crate but present point to this java and id of s3 is diifert
+		
+		char ch[]= {'j','a','v','a'};
+		System.out.println(ch.hashCode()); //hashcode is different here because of char
+		
+		String s4=new String(ch);   // converted char to string but hashcod is same of s,s1,s3 like 
+		System.out.println(s4.hashCode());
+		
+		
+	}
+
+}

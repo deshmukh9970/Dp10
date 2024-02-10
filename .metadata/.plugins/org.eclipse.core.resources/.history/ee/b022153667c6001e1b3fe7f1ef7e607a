@@ -1,0 +1,10 @@
+package com.array.project;
+
+public class Student {
+	
+	private int studentid;
+	private String stdentName;
+	private String studentCorse;
+	private int courseFee;
+
+}

@@ -1,0 +1,13 @@
+package com.array.objects2;
+
+public class StudentConstructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Student stud[]=new Student[3];
+		 stud[0]=new Student(1, "Amar", new double[] {64.4,78.4,89.5}, new Course(1, "java"))
+		
+	}
+
+}

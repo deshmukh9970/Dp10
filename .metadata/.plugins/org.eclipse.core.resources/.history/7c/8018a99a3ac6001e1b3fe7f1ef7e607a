@@ -1,0 +1,21 @@
+package com.string;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         
+		String s="java";
+		System.out.println(s.hashCode());
+		
+		String s1="java";
+		
+		System.out.println(s.hashCode());
+		
+		String s3=new String("java");
+		System.out.println(s3.hashCode()); //but here crate two object 1 object in heap and 2 scp 
+		// if scp java is not presnt that time crate but present point to this java and id is diifert
+		
+	}
+
+}

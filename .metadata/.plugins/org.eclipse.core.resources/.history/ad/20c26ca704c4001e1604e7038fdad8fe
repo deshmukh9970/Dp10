@@ -1,0 +1,23 @@
+package com.array.lab2;
+
+//Merge the two arrays as follows
+//ar1={1,2,3}
+//ar2={4,5,6,7,8}
+//o/p: mar1={1,4,2,5,3,6,7,8}
+//mar2={1,5,3,7,8}
+
+public class MargeArray {
+
+	public static int[] arrayAlternative(int a[],int b[])
+	{
+		int len1=a.length;
+		int len2=b.length;
+		int mar[]=new int[]
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

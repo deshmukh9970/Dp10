@@ -1,0 +1,27 @@
+package com.oops.assignments.constrctor;
+
+public class AnnomissBlockOrIIB {
+	
+	int num;
+	String name;
+	
+	{
+		System.out.println("this Annomisss Block or IIB");
+	}
+	
+	public AnnomissBlockOrIIB(int num,String name)
+	{
+		this.num=num;
+		this.name=name;
+		System.out.println("Name : "+name);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AnnomissBlockOrIIB obj=new AnnomissBlockOrIIB(2,"Pramod");
+		AnnomissBlockOrIIB obj1=new AnnomissBlockOrIIB(3,"ram");
+
+	}
+
+}

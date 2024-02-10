@@ -1,0 +1,27 @@
+package com.string;
+
+public class CountDigitInString {
+	
+	static void countDigit(String s)
+	{
+		int count=0;
+		char ch[]=s.toCharArray();
+		
+		for(char c:ch)
+		{
+			if(c>=48 && c<=57)
+			{
+				count++;
+			}
+		}
+		System.out.println("Digit Count "+count);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="java i45 program485";
+
+	}
+
+}

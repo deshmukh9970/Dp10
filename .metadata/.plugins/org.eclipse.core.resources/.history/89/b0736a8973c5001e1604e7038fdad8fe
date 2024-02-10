@@ -1,0 +1,10 @@
+package com.array.objects3;
+
+public class GroceryShope {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

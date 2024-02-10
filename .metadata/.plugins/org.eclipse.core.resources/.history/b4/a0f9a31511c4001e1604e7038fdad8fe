@@ -1,0 +1,15 @@
+package com.array.lab2;
+
+//Find a continuous sub array whose sum is equal to given number. 
+//e.g. if given array is { 12 ,4, 2, 10 , 5 , 1 }  
+//and given number is 16 then sum of subarray { 4,2,10} and {10, 5,1},{12,4} is
+// equal to given number.
+
+public class SubArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.string.compare;
+
+public class demoCampareto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//compare unicode 
+		
+		String s1="Abha";
+		String s2="Blae";
+		
+		System.out.println(s1.compareTo(s2)); //-1  s1 fistr char differance  to s2 of first char
+		System.out.println(s2.compareTo(s1));//+1
+		
+		String s3="Abha";
+		String s4="Clae";
+      
+		System.out.println(s1.compareTo(s2)); //-2  s3 fistr char differance  to s4 of first char
+		System.out.println(s2.compareTo(s1));//+2 
+	}
+
+}

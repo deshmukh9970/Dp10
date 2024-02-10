@@ -1,0 +1,19 @@
+package com.string;
+
+public class DemoCompareAndEqual {
+	
+	public static void main(String[] args) {
+		
+		String s1="java";
+		String s2="java";
+		
+		System.out.println(s1==s2); //here compare refrance 
+		System.out.println(s1.equals(s2)); //here compare value
+		
+		s1=s1.concat("programs");
+		
+		System.out.println(s1==s2); //here compare refrance 
+		System.out.println(s1.equals(s2)); //here compare value
+	}
+
+}

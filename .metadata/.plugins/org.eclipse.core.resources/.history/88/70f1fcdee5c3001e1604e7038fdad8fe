@@ -1,0 +1,20 @@
+package com.array.eillips;
+
+public class DemoEillips {
+	
+	static void findSum(int arr[])
+	{
+		int sum=0;
+		for(int x:arr)
+		{
+			sum=sum+x;
+		}
+		System.out.println("Sum : "+sum);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

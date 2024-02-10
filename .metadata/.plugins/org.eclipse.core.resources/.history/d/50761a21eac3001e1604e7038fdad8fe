@@ -1,0 +1,47 @@
+package com.array.eillips;
+
+public class RulesOveloading {
+	
+	static void show(int ...a)
+	{
+	      for(int x:a)
+	      {
+	    	  System.out.println(x);
+	      }
+	}
+	
+	static void show(double ...b)
+	{
+	      for(double x:b)
+	      {
+	    	  System.out.println(x);
+	      }
+	}
+	
+	
+	// ---------Above ovloading possible
+	
+	
+	static void show(char c,int ...a)
+	{
+		System.out.println(c);
+	      for(int x:a)
+	      {
+	    	  System.out.println(x);
+	      }
+	}
+	
+	static void show(int a,char ...c)
+	{
+		
+		System.out.println(a);
+	      for(char x:c)
+	      {
+	    	  System.out.println(x);
+	      }
+	}
+	
+  //-------------------above code ambigute 	
+
+
+}

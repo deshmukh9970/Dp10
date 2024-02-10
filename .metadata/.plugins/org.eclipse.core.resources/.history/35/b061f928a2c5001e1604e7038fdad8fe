@@ -1,0 +1,32 @@
+package com.test;
+
+
+//WAP find the common elements between two arrays
+
+public class CommonElement
+{
+  static void findSameArray(int arr[],int arr1[])
+  {
+      
+     for(int i=0;i<arr.length;i++)
+     {
+        for(int j=0;i<arr1.length;j++)
+        {
+            if(arr[i]==arr1[j])
+           {
+               System.out.println("common"+arr[i]);
+            }
+
+         }
+     }
+
+  }
+
+   public static void main(String[] args)
+   {
+      int arr[]={2,4,5,6};
+      int arr1[]={6,5,4,7};
+      findSameArray(arr,arr1);
+   
+   }
+}

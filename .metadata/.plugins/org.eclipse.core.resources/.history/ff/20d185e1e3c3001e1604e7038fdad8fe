@@ -1,0 +1,98 @@
+package com.array;
+
+import java.util.Arrays;
+
+public class MargeArray {
+	
+	public static int[] arrayMar(int a[],int b[])
+	{
+		
+		int marge[]=new int[a.length+b.length];
+		int index=0;
+		
+		for(int i=0;i<a.length;i++)
+		{
+			marge[index++]=a[i];
+		}
+		
+		for(int i=0;i<b.length;i++)
+		{
+			marge[index++]=b[i];
+		}
+		
+		return marge;
+	}
+	
+	
+	static int[] margeAlternative(int a[],int b[])
+	{
+	   int len1=a.length;
+	   int len2=b.length;
+		int mar[]=new int[len1+len2] ;
+		int i,j,index;
+		index=0;
+		
+		for(i=0,j=0;i<len1&&j<len2;i++,j++)
+		{
+			mar[index++]=a[i];
+			mar[index++]=b[i];
+		}
+		while(i<len1)
+		{
+			mar[index++]=a[i++];
+		}
+		while(j<len2)
+		{
+			mar[index++]=b[j++];
+		}
+		
+		return mar;
+		
+	}
+	
+	static int[] margeSkip(int a[],int b[])
+	{
+		 int len1=a.length;
+		   int len2=b.length;
+		   int maxLength=Math.max(len1, len2);
+			int mar[]=new int[maxLength] ;
+			int index=0;
+			int i=0;
+			
+			while(i<a.length)
+			{
+				mar[index++]=a[i++];
+			}
+			while(i<b.length)
+			{
+				mar[index++]=b[i++];
+			}
+			
+			
+			
+			return mar;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr1[]= {1,2,3,4};
+		int arr2[]= {11,12,13,14,15};
+		
+		int m[]=arrayMar(arr1, arr2);
+		
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
+		
+		System.out.println("Marge Array : "+Arrays.toString(m));
+
+		int ma[]=margeAlternative(arr1, arr2);
+		System.out.println("Alternative Marge Array : "+Arrays.toString(ma));
+		
+		int ms[]=margeSkip(arr1, arr2);
+		System.out.println("Skip Marge Array : "+Arrays.toString(ms));
+		
+		
+	}
+
+}

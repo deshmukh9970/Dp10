@@ -1,0 +1,33 @@
+package com.array.objects;
+
+public class StudentArray {
+	
+	static void display(Student st[])
+	{
+		for(Student s:st)
+		{
+			System.out.println(s);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student stud[]=new Student[5];
+		
+		//System.out.println(stud[1].getId()); //null pointer exption
+		
+		stud[0]=new Student(1,"xyz",10);
+	    //stud[1]=new Student(); value is null
+		stud[1]=new Student(2,"yza",11);
+		stud[2]=new Student(3,"iop",12);
+		stud[3]=new Student(4,"sop",13);
+		stud[4]=new Student(5,"abc",14);
+		
+		
+		display(stud);
+		
+
+	}
+
+}

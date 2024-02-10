@@ -1,0 +1,10 @@
+package com.array2d.transpoe;
+
+public class SumOfRow {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
